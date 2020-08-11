@@ -6,7 +6,7 @@ export default class App extends React.Component{
 
   ifScaned= e=>{
     Linking.openURL(e.data).catch(err=>
-      Alert.alert("QR Code Invalido", e.data))
+      Alert.alert("QR Code Invalido!", e.data))
   }
 
   render(){
